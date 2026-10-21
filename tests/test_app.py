@@ -1,7 +1,7 @@
 
 import pytest
 
-from app import add_numbers, greet_user, calculate_discount
+from app import add_numbers, greet_user, calculate_discount, multiply_numbers
 
 
 def test_add_numbers():
@@ -24,3 +24,6 @@ def test_negative_price():
 def test_invalid_discount():
     with pytest.raises(ValueError):
         calculate_discount(1000, 150)
+
+def test_multiply_numbers():
+    assert multiply_numbers(4, 5) == 20
