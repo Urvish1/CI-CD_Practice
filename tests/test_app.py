@@ -1,12 +1,11 @@
 
 import pytest
 
-from app import add_numbers, greet_user, calculate_discount, multiply_numbers
+from app import add_numbers, calculate_discount, greet_user, multiply_numbers
 
 
 def test_add_numbers():
     assert add_numbers(10, 20) == 30
-
 
 def test_greet_user():
     assert greet_user("Urvish") == "Hello, Urvish!"
